@@ -35,6 +35,13 @@ body {
     }
 }
 
+div{
+width: max-content;
+/* margin: 10px; */
+background-color: var(--background-color);
+border-radius: 15px;
+}
+
 #titleBanner {
   width: max-content;
   background: linear-gradient(90deg, rgb(221, 213,208) 50%, transparent 50%), linear-gradient(90deg, rgb(221, 213,208) 50%, transparent 50%), linear-gradient(0deg, rgb(221, 213,208) 50%, transparent 50%), linear-gradient(0deg, rgb(221, 213,208) 50%, transparent 50%);
@@ -42,6 +49,7 @@ body {
   background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
   padding: 10px;
   animation: border-dance 20s infinite linear;
+  border-radius: 15px;
 }
 
 @keyframes border-dance {
