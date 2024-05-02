@@ -24,6 +24,7 @@ body {
 :root {
     --border: #ddd5d0;
     --background-color: #ece2d071;
+    --borderCurve: 15px;
 }
 
 @keyframes moveBackground {
@@ -35,11 +36,22 @@ body {
     }
 }
 
+
+.github{
+  width: 10%;
+  background-color: var(--background-color);
+  border-radius: var(--borderCurve);
+  padding: 1%;
+  position: relative;
+  bottom:24%;
+  left:-43%;
+}
+
+
 div{
 width: max-content;
-/* margin: 10px; */
 background-color: var(--background-color);
-border-radius: 15px;
+border-radius: var(--borderCurve);
 }
 
 #titleBanner {
@@ -49,7 +61,7 @@ border-radius: 15px;
   background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
   padding: 10px;
   animation: border-dance 20s infinite linear;
-  border-radius: 15px;
+  border-radius: var(--borderCurve);
 }
 
 @keyframes border-dance {
