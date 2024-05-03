@@ -1,24 +1,124 @@
 <!DOCTYPE html>
-<html class = 'flex-center'>
-    <head>
-        <title>Template</title>
-        <link href='style.css' rel='stylesheet' type='text/css'>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include tippy.js library -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <style>
+        /* Additional CSS styles */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(14deg, #582C4D, #A26769, #D5B9B2);
+            background-size: 300% 100%;
+            animation: 3s linear 1s infinite alternate moveBackground;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #3a2636a4;
+            font-size: 5em; /* Increased font size */
+            text-align: center;
+            position: relative; /* Position relative for tooltip */
+        }
 
-    <body>
-        <!-- Content -->
-        <div>
+        /* Tooltip style */
+        .tooltip {
+            cursor: pointer;
+            position: relative;
+        }
 
-            <p id = 'titleBanner'>
-                T.o.m.m.y. 
-            </p>
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 300px;
+            background-color: rgba(236, 226, 208, 0.473); /* Same background as other text */
+            color: #000000; /* Same color as other text */
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 999;
+            bottom: -200%;
+            left: 170%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
 
-        </div>
-        <img 
-        class="github"
-         src="github.png"
-        >
-        <!-- Scripts -->
-        <script src='script.js'></script>
-    </body>
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+            font-size: 14px; /* Adjusted font size */
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0; /* Start position */
+            }
+            100% {
+                background-position: 100% 0; /* End position */
+            }
+        }
+
+        .content {
+            background-color: rgba(236, 226, 208, 0.44);
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        #titleBanner {
+            background: linear-gradient(90deg, rgb(221, 213, 208) 50%, transparent 50%), linear-gradient(90deg, rgb(221, 213, 208) 50%, transparent 50%), linear-gradient(0deg, rgb(221, 213, 208) 50%, transparent 50%), linear-gradient(0deg, rgb(221, 213, 208) 50%, transparent 50%);
+            background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+            background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+            padding: 10px;
+            animation: border-dance 20s infinite linear;
+            border-radius: 15px;
+        }
+
+        @keyframes border-dance {
+            0% {
+                background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+            }
+            100% {
+                background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+            }
+        }
+
+        .github, .snap, .insta, .twitter {
+            width: 100px;
+            background-color: rgba(236, 226, 208, 0.44);
+            border-radius: 15px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Change cursor to pointer when hovering over clickable images */
+        .github, .snap, .insta, .twitter {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Content -->
+    <div class="content">
+        <!-- Wrap your name with a span and add a class for tooltip -->
+        <p id="titleBanner">
+            <span class="tooltip">T.o.m.m.y.<span class="tooltiptext">Greetings, I'm Thomas Whitaker, but you can call me Tommy. I'm embarking on the journey to become a proficient developer. Currently, I possess a foundation in Java and HTML, with a voracious appetite for learning more languages. Allow me to share a bit about myself—I've been dedicated to strength training for the past five years, nurturing both my mind and body. At the youthful age of 16, I find immense satisfaction in work, currently employed at the newly opened Chipotle. Additionally, I'm fortunate to have a loving girlfriend, with whom I've shared three meaningful years. Now, let's delve into what I bring to the table—I'm actively pursuing mastery in software development. If you're interested in mentoring, collaboration, or simply reaching out, please feel free to contact me through the channels provided below (1-989-313-1456). Thank you for your attention.</span></span>
+        </p>
+
+        <!-- Anchor tags wrapping the images with the href attributes set to your profile URLs -->
+        <a href="https://github.com/DrZebr" target="_blank"><img class="github" src="github.png" alt="GitHub Logo"></a>
+        <a href="https://www.snapchat.com/add/tommy_whita" target="_blank"><img class="snap" src="snap.png" alt="Snap Logo"></a>
+        <a href="https://www.instagram.com/t.o.m.m.y.w_/" target="_blank"><img class="insta" src="insta.png" alt="insta Logo"></a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
 </html>
