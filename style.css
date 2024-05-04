@@ -61,6 +61,22 @@ body {
     position: relative;
 }
 
+.contacts-text {
+    text-align: center;
+    color: #3a2636a4; /* Adjust color as needed */
+    font-size: 0.4em; /* Adjust size as needed */
+    margin-bottom: 5px; /* Adjust spacing as needed */
+    position: absolute;
+    top: 50%; /* Adjust the top position to position it above your social media links */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.email {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
 #titleBanner {
     background: linear-gradient(90deg, rgb(221, 213, 208) 50%, transparent 50%), linear-gradient(90deg, rgb(221, 213, 208) 50%, transparent 50%), linear-gradient(0deg, rgb(221, 213, 208) 50%, transparent 50%), linear-gradient(0deg, rgb(221, 213, 208) 50%, transparent 50%);
     background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
@@ -79,7 +95,7 @@ body {
     }
 }
 
-.github, .insta, .discord {
+.github, .insta, .discord, .email{
     width: 100px;
     background-color: rgba(236, 226, 208, 0.44);
     border-radius: 15px;
@@ -105,16 +121,17 @@ body {
     height: auto;
     cursor: pointer;
 }
+
 .menu-content {
     display: none;
     position: absolute;
     background-color: rgba(236, 226, 208, 0.44);
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     top: 80px;
-    left: 0; /* Initial left position */
-    width: 200px;
+    left: 0;
+    width: 400px; /* Adjust width */
     z-index: 998;
     font-size: 20px;
     opacity: 0;
@@ -125,23 +142,40 @@ body {
     opacity: 1;
 }
 
-
-/* Add this CSS to your style.css file */
-
 .menu-content ul {
     padding: 0;
 }
 
 .menu-content ul li {
     list-style: none;
-    padding-left: 30px; /* Adjust as needed */
     margin-bottom: 10px;
-    line-height: 30px;
-    background: url('github.png') left center no-repeat; /* Set GitHub icon as background */
-    background-size: 30px; /* Adjust as needed */
 }
 
-.menu-content ul li:hover {
-    background: url('github_hover.png') left center no-repeat; /* Change background on hover */
+.menu-content ul li a {
+    display: block;
+    padding: 10px;
+    color: #3a2636a4;
+    text-decoration: none;
+}
+
+.menu-content ul li.github a {
+    background: url('github.png') left center no-repeat;
+    background-size: 30px;
+    padding-left: 40px;
+}
+
+.menu-content ul li.email {
+    background: none; /* Remove the background */
+    padding-left: 0; /* Remove the left padding */
+    margin-bottom: 10px; /* Add some bottom margin */
+    line-height: inherit; /* Inherit line height */
+}
+
+.menu-content ul li.email a {
+    display: inline-block; /* Display as block to align properly */
+    padding: 10px 35px; /* Add padding for the mail icon */
+    background: url('mail.png') left center no-repeat; /* Set email icon as background */
     background-size: 30px; /* Adjust as needed */
+    color: #3a2636a4; /* Change the text color of the link */
+    text-decoration: none; /* Remove underline from the link */
 }
