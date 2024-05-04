@@ -6,9 +6,9 @@ function toggleMenu() {
 
 // Function to hide the menu content when clicking outside of it
 window.onclick = function(event) {
-    var menuIcon = document.querySelector('.menu-icon');
+    var menuBurgerIcon = document.querySelector('#menuBurgerIcon');
     var menuContent = document.getElementById("menuContent");
-    if (!event.target.matches('.menu-icon') && !event.target.matches('.menu-content') && !menuContent.contains(event.target)) {
+    if (event.target != menuBurgerIcon && !menuContent.contains(event.target)) {
         menuContent.classList.remove('show'); // Remove the "show" class
     }
 }
