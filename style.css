@@ -10,9 +10,9 @@ body {
     animation: 3s linear 1s infinite alternate moveBackground;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #3a2636a4;
-    font-size: 5em; /* Increased font size */
+    font-size: 5em;
     text-align: center;
-    position: relative; /* Position relative for tooltip */
+    position: relative;
 }
 
 /* Tooltip style */
@@ -24,8 +24,8 @@ body {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 300px;
-    background-color: rgba(236, 226, 208, 0.473); /* Same background as other text */
-    color: #000000; /* Same color as other text */
+    background-color: rgba(236, 226, 208, 0.473);
+    color: #000000;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -42,15 +42,15 @@ body {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-    font-size: 14px; /* Adjusted font size */
+    font-size: 14px;
 }
 
 @keyframes moveBackground {
     0% {
-        background-position: 0 0; /* Start position */
+        background-position: 0 0;
     }
     100% {
-        background-position: 100% 0; /* End position */
+        background-position: 100% 0;
     }
 }
 
@@ -58,6 +58,7 @@ body {
     background-color: rgba(236, 226, 208, 0.44);
     border-radius: 15px;
     padding: 20px;
+    position: relative;
 }
 
 #titleBanner {
@@ -78,7 +79,7 @@ body {
     }
 }
 
-.github, .snap, .insta, .twitter {
+.github, .insta, .discord {
     width: 100px;
     background-color: rgba(236, 226, 208, 0.44);
     border-radius: 15px;
@@ -87,6 +88,60 @@ body {
 }
 
 /* Change cursor to pointer when hovering over clickable images */
-.github, .snap, .insta, .twitter {
+.github, .insta, .discord {
     cursor: pointer;
+}
+
+/* Menu icon */
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+.menu-icon img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(236, 226, 208, 0.44);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    top: 80px;
+    left: 0; /* Initial left position */
+    width: 200px;
+    z-index: 998;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.menu-content.show {
+    display: block;
+    opacity: 1;
+}
+
+
+/* Add this CSS to your style.css file */
+
+.menu-content ul {
+    padding: 0;
+}
+
+.menu-content ul li {
+    list-style: none;
+    padding-left: 30px; /* Adjust as needed */
+    margin-bottom: 10px;
+    line-height: 30px;
+    background: url('github.png') left center no-repeat; /* Set GitHub icon as background */
+    background-size: 30px; /* Adjust as needed */
+}
+
+.menu-content ul li:hover {
+    background: url('github_hover.png') left center no-repeat; /* Change background on hover */
+    background-size: 30px; /* Adjust as needed */
 }
