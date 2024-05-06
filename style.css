@@ -86,6 +86,18 @@ body {
     border-radius: 15px;
 }
 
+#about {
+    position: absolute;
+    top: 120%;
+    left: 25%;
+    font-size: 50px;
+    background-color: rgba(236, 226, 208, 0.44);
+    border-radius: 15px;
+    padding: 5px;
+    animation: border-dance 20s infinite linear;
+    
+}
+
 @keyframes border-dance {
     0% {
         background-position: 0 0, 100% 100%, 0 100%, 100% 0;
