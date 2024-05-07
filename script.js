@@ -12,3 +12,7 @@ window.onclick = function(event) {
         menuContent.classList.remove('show'); // Remove the "show" class
     }
 }
+function goBack() {
+    console.log("Go back button clicked");
+    window.history.back();
+}

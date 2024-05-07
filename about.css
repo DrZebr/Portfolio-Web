@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(14deg, #582C4D, #A26769, #D5B9B2);
+    background-size: 300% 100%;
+    animation: 3s linear 1s infinite alternate moveBackground;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3a2636a4;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align items in a column */
+    height: 100px;
+}
+
+#about-text {
+    background-color: rgba(236, 226, 208, 0.473);
+    color: #000000;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 80%;
+    cursor: default;
+    height: 500px;
+    width: 900px;
+}
+
+
+.back-button {
+    background-color: rgba(236, 226, 208, 0.44);
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #A26769;
+}
