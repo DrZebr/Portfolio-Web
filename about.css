@@ -4,13 +4,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden; /* You may consider removing this line */
     background: linear-gradient(14deg, #582C4D, #A26769, #D5B9B2);
-    background-size: 300% 100%;
-    animation: 3s linear 1s infinite alternate moveBackground;
+    background-size: 600% 100%; /* Adjusted the background size */
+    animation: moveBackground 6s linear 3s infinite alternate; /* Ensure the animation name is defined */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #3a2636a4;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     position: relative;
 }
@@ -19,13 +19,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Align items in a column */
+    flex-direction: column;
     height: 100px;
 }
 
 #about-text {
     background-color: rgba(236, 226, 208, 0.473);
-    color: #000000;
+    color: #3a2636d3;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -34,15 +34,17 @@ body {
     cursor: default;
     height: 500px;
     width: 900px;
+    border: dashed;
+    border-color: rgb(221, 213, 208);
 }
-
 
 .back-button {
     background-color: rgba(236, 226, 208, 0.44);
-    color: #000000;
-    border: none;
+    color: #3a2636a4;
+    border: dashed;
+    border-color: rgb(221, 213, 208);
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
@@ -52,4 +54,13 @@ body {
 
 .back-button:hover {
     background-color: #A26769;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
 }
