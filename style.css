@@ -191,18 +191,4 @@ body {
     padding-left: 40px;
 }
 
-.menu-content ul li.email {
-    background: none; /* Remove the background */
-    padding-left: 0; /* Remove the left padding */
-    margin-bottom: 10px; /* Add some bottom margin */
-    line-height: inherit; /* Inherit line height */
-}
 
-.menu-content ul li.email a {
-    display: inline-block; /* Display as block to align properly */
-    padding: 10px 35px; /* Add padding for the mail icon */
-    background: url('mail.png') left center no-repeat; /* Set email icon as background */
-    background-size: 30px; /* Adjust as needed */
-    color: #3a2636a4; /* Change the text color of the link */
-    text-decoration: none; /* Remove underline from the link */
-}
