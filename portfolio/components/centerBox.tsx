@@ -10,9 +10,9 @@ export default function CenterBox(){
 
                     <div className="title">
 
-                    <h2>
+                    <h1>
                         Hello World!
-                    </h2>
+                    </h1>
 
                 </div>
 
