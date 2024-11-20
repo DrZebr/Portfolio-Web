@@ -1,6 +1,6 @@
 import './styles/center-box.css';
 
-export default function CenterBox(){
+export default function CenterBox() {
 
     return (
 
@@ -8,7 +8,7 @@ export default function CenterBox(){
 
             <div className="centerBox">
 
-                    <div className="title">
+                <div className="title">
 
                     <h1>
                         Hello World!

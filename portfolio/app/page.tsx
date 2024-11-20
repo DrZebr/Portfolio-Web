@@ -1,19 +1,25 @@
-import {Metadata} from 'next';
+import { Metadata } from 'next';
 
 import CenterBox from '@/components/centerBox';
 
-export const metadata : Metadata = {
+import Headerbox from "@/components/header";
+
+export const metadata: Metadata = {
 
   title: 'dad'
 
 }
 
-export default function Index(){
+export default function Index() {
 
   return (
+    <div>
+
+      <Headerbox />
 
       <CenterBox />
 
+    </div>
   )
 
 } 

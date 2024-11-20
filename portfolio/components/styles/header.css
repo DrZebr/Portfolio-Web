@@ -1,0 +1,100 @@
+.topbarContainer {
+
+    /* background-color: red; */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 15vh;
+
+    margin-top: 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headerbox {
+
+    border: dashed;
+    border-radius: 15% / 100%;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0.795);
+
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+.headerTitle {
+
+    font-size: 5rem;
+    color: white;
+
+    text-align: center;
+
+}
+
+.topHeaderContainer {
+
+    /* background-color: wheat; */
+
+    position: relative;
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headerButtons {
+
+    font-size: 2rem;
+    color: white;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+    height: 30%;
+
+    /* background-color: blue; */
+
+}
+
+.headerButton {
+
+    /* background-color: wheat; */
+
+    z-index: 1000;
+
+    color: white;
+    text-decoration: none;
+
+    margin: auto 5% auto 5%;
+
+    transition: 0.2s;
+
+}
+
+.headerButton:hover {
+
+    cursor: pointer;
+    text-decoration: underline;
+
+    color: green;
+
+}
