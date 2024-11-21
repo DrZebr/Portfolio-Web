@@ -17,7 +17,6 @@
 .centerBox {
 
     display: flex;
-    justify-content: center;
     align-items: center;
     border: dashed;
     border-radius: 10%;
@@ -26,11 +25,26 @@
     position: sticky;
     width: 30rem;
     height: 30rem;
+    flex-direction: column;
 
 }
 
 .title {
     color: white;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 
+.title img {
+    scale: 0.9;
+    border-radius: 100%;
+    border: dashed;
+}
+
+.paragraph {
+    color: white;
+    font-size: 15px;
 }

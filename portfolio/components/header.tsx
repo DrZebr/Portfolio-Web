@@ -15,15 +15,15 @@ export default function Headerbox() {
                 <div className="headerButtons">
 
                     <a className="headerButton" href="#">
-                        Home
+                        <img className="svgFlip" width="40px" height="40px" src="/icons/home.svg" />
                     </a>
 
                     <a className="headerButton" href="#">
-                        Projects
+                        <img className="svgFlip" width="40px" height="40px" src="/icons/book-bookmark.svg" />
                     </a>
 
                     <a className="headerButton" href="#">
-                        Contact
+                        <img className="svgFlip" width="40px" height="40px" src="/icons/user.svg" />
                     </a>
 
 

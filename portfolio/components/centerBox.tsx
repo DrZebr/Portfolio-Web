@@ -10,12 +10,19 @@ export default function CenterBox() {
 
                 <div className="title">
 
+                    <img src="/suitman.jpg" />
+
                     <h1>
-                        Hello World!
+                        Hi, I'm Thomas J. Whitaker
                     </h1>
 
                 </div>
+                <div className="paragraph">
 
+                    <h2>
+                        Future Software Developer and Creative Innovator.
+                    </h2>
+                </div>
 
             </div>
 
