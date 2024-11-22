@@ -23,13 +23,14 @@
     border-color: white;
     background-color: rgba(0, 0, 0, 0.795);
     position: sticky;
-    width: 30rem;
-    height: 30rem;
+    width: 32rem;
+    height: 32rem;
     flex-direction: column;
 
 }
 
 .title {
+    margin: 2%;
     color: white;
     font-size: 25px;
     display: flex;
@@ -46,5 +47,7 @@
 
 .paragraph {
     color: white;
-    font-size: 15px;
+    font-size: 1.16rem;
+    margin: -3% 5% 0 5%;
+    text-align: center;
 }

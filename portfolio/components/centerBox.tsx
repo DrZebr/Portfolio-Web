@@ -20,7 +20,9 @@ export default function CenterBox() {
                 <div className="paragraph">
 
                     <h2>
-                        Future Software Developer and Creative Innovator.
+                        Welcome! I'm Thomas J. Whitaker, an aspiring software developer with a passion for creating innovative solutions. As a high school senior studying
+                        computer programming, I've developed skills in Java, web design, 3D animation, and more. I'm also a BPA Vice President and
+                        National Qualifier in Web Application Development. Explore my projects and reach out—let's build something great together!
                     </h2>
                 </div>
 
