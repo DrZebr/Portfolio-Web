@@ -1,0 +1,46 @@
+.centerContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: red; */
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -100;
+}
+
+.projectsContainer {
+
+    background-color: rgba(0, 0, 0, 0.829);
+    border: dashed white;
+    border-radius: 2% / 5%;
+
+    position: relative;
+
+    margin-top: 10rem;
+
+    width: 65rem;
+    height: 40rem;
+
+    animation: animateIn 0.5s cubic-bezier(.175, .885, .32, 1.275) both;
+
+}
+
+@keyframes animateIn {
+
+    0% {
+        -webkit-transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1)
+    }
+
+}

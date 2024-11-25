@@ -24,8 +24,11 @@
     background-color: rgba(0, 0, 0, 0.795);
     position: sticky;
     width: 32rem;
+    margin-top: 8rem;
     height: 32rem;
     flex-direction: column;
+
+    animation: animateIn 0.5s cubic-bezier(.175, .885, .32, 1.275) both;
 
 }
 
@@ -50,4 +53,16 @@
     font-size: 1.16rem;
     margin: -3% 5% 0 5%;
     text-align: center;
+}
+
+@keyframes animateIn {
+
+    0% {
+        -webkit-transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1)
+    }
+
 }
