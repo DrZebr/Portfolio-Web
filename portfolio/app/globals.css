@@ -1,9 +1,0 @@
-@font-face {
-    font-family: "Minecraft";
-    src: url("/fonts/Minecraftchmc-dBX.ttf");
-}
-
-html {
-    font-family: "Minecraft";
-    background-image: url("/ffg.gif");
-}
